@@ -1,0 +1,62 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* variables */
+:root {
+	--white: #eeeeee;
+	--primary: #e5bf6f;
+	--secondary: #274749;
+	--secondary-darker: #0f2221;
+}
+
+/* general */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Rubik", sans-serif;
+	height: 100%;
+}
+
+/* bg img */
+html {
+	height: 100%;
+	background-image: url("https://images.wallpapersden.com/image/download/sett-league-of-legends_68215_3840x2207.jpg");
+	background-color: #888888;
+	background-blend-mode: multiply;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* header */
+.header {
+	text-align: center;
+	font-weight: 500;
+	margin: 3em auto;
+	color: var(--white);
+}
+
+#title {
+	font-size: 1.5rem;
+	margin-bottom: 0.3rem;
+}
+
+#description {
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+/* form */
+#survey-form {
+	width: 85%;
+	margin: auto;
+	padding: 1.3rem;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,120 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* global */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* header */
+nav {
+	margin-bottom: 2em;
+	font-family: "Noto Sans", sans-serif;
+}
+
+nav li {
+	list-style: none;
+	text-align: center;
+	padding: 0.6em;
+}
+
+nav li a {
+	text-decoration: none;
+	color: #000;
+	padding: 0.6em;
+}
+
+#title {
+	text-align: center;
+	margin: 0.7em;
+	font-family: "Noto Sans", sans-serif;
+}
+
+/* image */
+#image {
+	width: 100%;
+}
+
+#img-caption {
+	margin-left: 0.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* info section */
+#tribute-info {
+	width: 80%;
+	margin: 3em auto;
+}
+
+.text-heading {
+	margin: 1em 0 0.2em 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.info-section p,
+.info-section li {
+	margin-bottom: 20px;
+	line-height: 1.5em;
+}
+
+/* footer */
+footer {
+	text-align: center;
+	margin: 2em 0;
+	font-size: 1.3em;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer a {
+	color: #000000;
+}
+
+footer a:hover {
+	color: #757575;
+}
+
+
+
+
+@media (min-width: 780px) {
+	/* header */
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 2em;
+		flex-wrap: nowrap;
+	}
+
+	nav {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav li {
+		display: inline;
+	}
+
+	/* text heading */
+	.text-heading {
+		margin-top: 2em;
+	}
+
+	/* img caption */
+	#img-caption {
+		font-size: 1.2em;
+	}
+
+	/* main */
+	#tribute-info {
+		width: 50%;
+		margin: 3em auto;
+		font-size: 1.4em;
+	}
+}
