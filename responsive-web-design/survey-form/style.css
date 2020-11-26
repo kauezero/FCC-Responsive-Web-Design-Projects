@@ -1,12 +1,11 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
 /* variables */
 :root {
-	--white: #eeeeee;
-	--primary: #e5bf6f;
-	--secondary: #274749;
-	--secondary-darker: #0f2221;
+	--white: #ffffff;
+	--primary: #44475a;
+	--accent: #fcb76d;
 }
 
 /* general */
@@ -20,43 +19,161 @@
 
 body {
 	font-family: "Rubik", sans-serif;
-	height: 100%;
-}
-
-/* bg img */
-html {
-	height: 100%;
-	background-image: url("https://images.wallpapersden.com/image/download/sett-league-of-legends_68215_3840x2207.jpg");
-	background-color: #888888;
-	background-blend-mode: multiply;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	font-weight: 300;
+	color: var(--white);
+	background-color: var(--primary);
 }
 
 /* header */
 .header {
 	text-align: center;
-	font-weight: 500;
 	margin: 3em auto;
 	color: var(--white);
 }
 
 #title {
-	font-size: 1.5rem;
+	font-size: 3rem;
 	margin-bottom: 0.3rem;
+	letter-spacing: 0.4em;
+	font-weight: 500;
+	color: var(--accent);
 }
 
 #description {
-	font-style: italic;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
+	font-weight: 400;
 }
 
 /* form */
+
+.label {
+	display: block;
+	margin-bottom: 12px;
+	font-weight: 400;
+}
+
+.input {
+	display: block;
+}
+
+.form-group {
+	margin: 30px 0px;
+}
+
+.text-input {
+	background: transparent;
+	border: none;
+	border-bottom: solid 3px var(--white);
+	width: 100%;
+	padding-left: 8px;
+	padding-bottom: 2px;
+	font-size: 0.9em;
+}
+
+.text-input:focus {
+	border-color: var(--accent);
+	transition: ease 0.3s;
+}
+
+.dropdown {
+	width: 100%;
+	padding: 8px;
+	color: var(--white);
+	border: solid 3px var(--white);
+	background: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 50%;
+}
+
 #survey-form {
-	width: 85%;
+	max-width: 750px;
 	margin: auto;
-	padding: 1.3rem;
-	border-radius: 20px;
-	background-color: rgba(255, 255, 255, 0.7);
+	padding: 1rem;
+}
+
+#submit {
+	display: block;
+	margin: auto;
+	padding: 10px 20px;
+	font-size: 1em;
+	width: 100%;
+	color: var(--accent);
+	border: solid 3px var(--accent);
+	background: transparent;
+	cursor: pointer;
+	margin-bottom: 2.5em;
+}
+
+#submit:hover {
+	background-color: var(--accent);
+	color: var(--primary);
+	transition: ease 0.3s;
+}
+
+#number {
+	width: 60px;
+	padding-left: 0;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+#suggestions {
+	width: 100%;
+	border: solid 3px var(--white);
+	background: transparent;
+	padding: 5px;
+	resize: none;
+}
+
+.radio-check {
+	margin-bottom: 13px;
+}
+
+.radio-check > label {
+	margin-left: 7px;
+}
+
+.text-input,
+.dropdown,
+#suggestions {
+	font-family: "Rubik", sans-serif;
+	font-weight: 300;
+}
+
+/*remove arrows number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*change placeholder color and opacity*/
+/* Chrome */
+::-webkit-input-placeholder {
+	color: var(--white);
+}
+/* IE 10+ */
+:-ms-input-placeholder { 
+	color: var(--white);
+}
+/* Firefox 19+ */
+::-moz-placeholder { 
+	color: var(--white);
+	opacity: 1;
+}
+/* Firefox 4 - 18 */
+:-moz-placeholder { 
+	color: var(--white);
+	opacity: 1;
 }

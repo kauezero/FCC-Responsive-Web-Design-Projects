@@ -8,70 +8,103 @@
 </head>
 	<body>
 		<header class="header">
-			<h1 id="title">League of Legends Survey</h1>
-			<p id="description">Tell us about your League of Legends experience</p>
+			<h1 id="title">SURVEY FORM</h1>
+			<p id="description">Tell us about experience and how to improve it</p>
 		</header>
 
 		<form action="" id="survey-form">
-			<label for="name" id="name-label">Name: </label>
-			<input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-			<label for="email" id="email-label">Email: </label>
-			<input type="email" id="email" name="email" placeholder="Enter your email" required>
+			<div class="form-group">
+				<label for="name" id="name-label" class="label">Name *</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" class="text-input" required>
+			</div>
 
-			<label for="number" id="number-label">Age (optional): </label>
-			<input type="number" id="number" name="age" min="13" max="99" placeholder="Enter your age">
 
-			<label for="dropdown">Main role: </label>
-			<select name="role" id="dropdown" required>
-				<option disabled selected value>Select main role</option>
-				<option value="top">Top laner</option>
-				<option value="jungle">Jungler</option>
-				<option value="mid">Mid laner</option>
-				<option value="marksman">Marksman</option>
-				<option value="support">Support</option>
-				<option value="fill">I play fill</option>
-			</select>
+			<div class="form-group">
+				<label for="email" id="email-label" class="label">Email *</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email" class="text-input" required>
+			</div>
 
-			<p>What's your current rank?</p>
-			<input type="radio" name="rank" value="challenger" id="challenger">
-			<label for="challenger">Challenger</label>
-			<input type="radio" name="rank" value="master" id="master">
-			<label for="master">Master</label>
-			<input type="radio" name="rank" value="diamond" id="diamond">
-			<label for="diamond">Diamond</label>
-			<input type="radio" name="rank" value="platinum" id="platinum">
-			<label for="platinum">Platinum</label>
-			<input type="radio" name="rank" value="gold" id="gold">
-			<label for="gold">Gold</label>
-			<input type="radio" name="rank" value="silver" id="silver">
-			<label for="silver">Silver</label>
-			<input type="radio" name="rank" value="bronze" id="bronze">
-			<label for="bronze">Bronze</label>
+			<div class="form-group">
+				<label for="number" id="number-label" class="label">Age</label>
+				<input type="number" id="number" name="age" min="13" max="99" placeholder="00" class="text-input">
+			</div>
 
-			<label for="find">How did you find out about League of Legends</label>
-			<select name="find" id="find">
-				<option value disabled selected>Select an option</option>
-				<option value="social">Social media</option>
-				<option value="friend">Friends</option>
-				<option value="esports">E-sports event</option>
-				<option value="youtube">Youtube</option>
-			</select>
+			<div class="form-group">
+				<label for="dropdown" class="label">Which option best describes your current role? *</label>
+				<select name="role" id="dropdown" class="dropdown" required>
+					<option disabled selected value="select">Select current role</option>
+					<option value="student">Student</option>
+					<option value="full-job">Full Time Job</option>
+					<option value="part-job">Part Time Job</option>
+					<option value="not">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
 
-			<p>Improvement suggestions</p>
-			<input type="checkbox" name="improvement" value="chat" id="chat">
-			<label for="chat">Implement voice chat</label>
-			<input type="checkbox" name="improvement" value="nerf" id="nerf">
-			<label for="nerf">Nerf every champion</label>
-			<input type="checkbox" name="improvement" value="buff" id="buff">
-			<label for="buff">Buff every champion</label>
-			<input type="checkbox" name="improvement" value="delete" id="delete">
-			<label for="delete">Delete Yasuo</label>
-			<input type="checkbox" name="improvement" value="battle" id="battle">
-			<label for="battle">Turn the game into a battle royale</label>
+			<div class="form-group">
+				<p class="label">Would you recommend freeCodeCamp to a friend?</p>
+				<div class="radio-check">
+					<input type="radio" name="recommend" value="definitely" id="definitely">
+					<label for="definitely">Definitely</label>
+				</div>
+				<div class="radio-check">
+					<input type="radio" name="recommend" value="maybe" id="maybe">
+					<label for="maybe">Maybe</label>
+				</div>
+				<div class="radio-check">
+					<input type="radio" name="recommend" value="not-sure" id="not-sure">
+					<label for="not-sure">Not sure</label>
+				</div>
+			</div>
 
-			<label for="suggestions">Other sugestions: </label>
-			<textarea name="suggestions" id="suggestions" cols="30" rows="5" placeholder="Enter your sugestion..."></textarea>
+			<div class="form-group">
+				<label for="find" id="dropdown" class="label">How did you find out about FreeCodeCamp</label>
+				<select name="find" id="find" class="dropdown">
+					<option value disabled selected>Select an option</option>
+					<option value="social">Social media</option>
+					<option value="youtube">Youtube</option>
+					<option value="friend">Friends</option>
+					<option value="school">School</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<p class="label">Things that should be improved (Check all that apply)</p>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="front" id="front">
+					<label for="front">Front-end Projects</label>
+				</div>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="back" id="back">
+					<label for="back">Back-end Projects</label>
+				</div>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="data" id="data">
+					<label for="data">Data Visualization</label>
+				</div>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="open-source" id="open-source">
+					<label for="open-source">Open Source Community</label>
+				</div>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="videos" id="videos">
+					<label for="videos">Videos</label>
+				</div>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="forum" id="forum">
+					<label for="forum">Forum</label>
+				</div>
+				<div class="radio-check">
+					<input type="checkbox" name="improve" value="additional" id="additional">
+					<label for="additional">Additional Courses</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="suggestions" class="label">Any comments or suggestions?</label>
+				<textarea name="suggestions" id="suggestions" cols="30" rows="5" placeholder="Enter your comment..."></textarea>
+			</div>
 
 			<button type="submit" id="submit">SUBMIT</button>
 		</form>
