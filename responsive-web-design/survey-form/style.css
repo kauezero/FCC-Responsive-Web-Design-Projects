@@ -132,6 +132,11 @@ body {
 	resize: none;
 }
 
+#suggestions:focus {
+	border-color: var(--accent);
+	transition: ease 0.3s;
+}
+
 .radio-check {
 	margin-bottom: 13px;
 }
