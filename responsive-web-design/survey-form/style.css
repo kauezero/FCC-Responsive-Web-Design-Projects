@@ -61,6 +61,7 @@ body {
 }
 
 .text-input {
+	color: var(--white);
 	background: transparent;
 	border: none;
 	border-bottom: solid 3px var(--white);
@@ -123,6 +124,7 @@ body {
 }
 
 #suggestions {
+	color: var(--white);
 	width: 100%;
 	border: solid 3px var(--white);
 	background: transparent;
@@ -138,11 +140,16 @@ body {
 	margin-left: 7px;
 }
 
+.dropdown option {
+	color: black;
+}
+
 .text-input,
 .dropdown,
 #suggestions {
 	font-family: "Rubik", sans-serif;
 	font-weight: 300;
+	outline: none;
 }
 
 /*remove arrows number input*/
