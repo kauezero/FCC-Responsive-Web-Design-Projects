@@ -2,7 +2,8 @@
 :root {
 	--white: #ffffff;
 	--primary: #44475a;
-	--accent: #fcb76d;
+  --accent: #fcb76d;
+  --transparent-bg: rgba(38, 50, 56, 0.3);
 }
 
 /* General */
