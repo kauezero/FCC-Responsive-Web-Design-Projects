@@ -1,0 +1,16 @@
+/* Variables */
+:root {
+	--white: #ffffff;
+	--primary: #44475a;
+	--accent: #fcb76d;
+}
+
+/* General */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
