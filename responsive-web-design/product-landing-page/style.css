@@ -1,9 +1,12 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Raleway:wght@400;500;600;700&display=swap');
+
 /* Variables */
 :root {
-	--white: #ffffff;
-	--primary: #44475a;
-  --accent: #fcb76d;
-  --transparent-bg: rgba(38, 50, 56, 0.3);
+  --black: #000;
+  --white: #fff;
+  --grey: #4E4D52;
+  --transparent-bk: rgba(0, 0, 0, 0.5);
 }
 
 /* General */
@@ -12,6 +15,69 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+/* Header */
+#header {
+  width: 100vw;
+  height: 100px;
+  padding: 0px 80px;
+  background: var(--transparent-bk);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  
+}
+
+#header-img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+
+#nav-bar ul {
+  list-style: none;
+}
+
+#nav-bar li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+#nav-bar a:hover {
+  color: var(--black);
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-image: url(https://i.redd.it/eumv20vqpzb61.jpg);
+  background-color: #b4b4b4;
+	background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 7rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 1px 1px 20px var(--black);
 }
