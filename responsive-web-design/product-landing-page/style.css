@@ -22,8 +22,8 @@
 /* Header */
 #header {
   width: 100vw;
-  height: 100px;
-  padding: 0px 80px;
+  height: 80px;
+  padding: 0px 150px;
   background: var(--transparent-bk);
   margin: 0 auto;
   display: flex;
@@ -34,8 +34,8 @@
 }
 
 #header-img {
-  max-width: 120px;
-  margin-top: -15px;
+  max-width: 100px;
+  margin-top: -10px;
 }
 
 #nav-bar ul {
@@ -51,7 +51,7 @@
   text-decoration: none;
   color: var(--white);
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   letter-spacing: 1px;
 }
 
@@ -63,7 +63,7 @@
 .hero {
   height: 100vh;
   background-image: url(https://i.redd.it/eumv20vqpzb61.jpg);
-  background-color: #b4b4b4;
+  background-color: #a8a7a7;
 	background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
@@ -80,4 +80,51 @@
   text-align: center;
   color: var(--white);
   text-shadow: 1px 1px 20px var(--black);
+}
+
+/* Models Section */
+#characteristics {
+  height: 100vh;
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.char-inner {
+  width: 80%;
+  margin: 200px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0px auto;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  padding: 100px 10px 10px 10px;
+  border-bottom: solid 2px var(--white);
+  max-width: fit-content;
+}
+
+.char-text {
+  max-width: 60%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+  display: none;
 }
