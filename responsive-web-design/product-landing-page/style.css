@@ -89,14 +89,6 @@
   color: var(--white);
 }
 
-.char-inner {
-  width: 80%;
-  margin: 200px auto 0px auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .section-title {
   text-align: center;
   margin: 0px auto;
@@ -106,6 +98,21 @@
   padding: 100px 10px 10px 10px;
   border-bottom: solid 2px var(--white);
   max-width: fit-content;
+}
+
+.video-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .char-text {
