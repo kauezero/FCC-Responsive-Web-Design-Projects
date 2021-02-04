@@ -1,5 +1,6 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /* Variables */
 :root {
@@ -30,7 +31,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  
+  z-index: 999;
 }
 
 #header-img {
@@ -84,7 +85,7 @@
 
 /* Models Section */
 #characteristics {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--grey);
   color: var(--white);
 }
@@ -98,6 +99,11 @@
   padding: 100px 10px 10px 10px;
   border-bottom: solid 2px var(--white);
   max-width: fit-content;
+}
+
+.video-div {
+  width: 50%;
+  margin: 50px auto;
 }
 
 .video-container {
@@ -116,12 +122,22 @@
 }
 
 .char-text {
-  max-width: 60%;
-  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  padding-bottom: 100px;
+  max-width: 60vw;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.5em;
   text-align: center;
 }
 
+/* Models */
+#models {
+  min-height: 100vh;
+}
+
+#models .section-title {
+  border-bottom: solid 2px var(--black);
+}
 
 
 
